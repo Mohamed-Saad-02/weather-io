@@ -1,101 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>WetherIo</title>
-    <!-- Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- FavIcon -->
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
-    <!-- web Font -->
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <!-- Main css -->
-    <link rel="stylesheet" href="./css/index.css" />
-    <!-- Media css -->
-    <link rel="stylesheet" href="./css/media.css" />
-
-    <script type="module" src="./js/app.js"></script>
-  </head>
-  <body>
-    <header class="position-relative">
-      <div class="container flex items-center justify-between">
-        <div class="logo">
-          <img src="./images/logo.png" alt="Logo" />
-        </div>
-        <div
-          class="search box flex items-center position-relative"
-          id="searchParent"
-        >
-          <input
-            type="search"
-            name="Search Location"
-            placeholder="Search City..."
-            autocomplete="off"
-            id="searchLocation"
-            class="border-0 outline-0 color-white"
-          />
-          <button class="icon-search" id="iconSearch">
-            <i class="fa-solid fa-search color-white"></i>
-          </button>
-          <button class="icon-back color-white" id="iconClose">
-            <i class="fa-solid fa-arrow-left-long"></i>
-          </button>
-          <ul class="list position-absolute" id="list"></ul>
-        </div>
-        <div class="current-location">
-          <button class="flex items-center" id="currentLocation">
-            <i class="fa-solid fa-crosshairs"></i>
-            <span>Current Location</span>
-          </button>
-        </div>
-      </div>
-    </header>
-    <main class="hidden">
-      <article class="container">
-        <div class="content-left position-sticky">
-          <section class="current-website" id="currentWebsite"></section>
-          <section class="forecast" id="forecastSection"></section>
-        </div>
-        <div class="content-right">
-          <section class="highlights" id="highlights"></section>
-          <section class="hourly-forecast" id="hourlyForecast"></section>
-          <footer
-            class="footer color-white flex items-center justify-center gap-20 flex-wrap"
-          >
-            <a
-              href="https://www.linkedin.com/in/mohamed-saad-025268304/"
-              class="body-3"
-              target="_blank"
-              >This Page Made 💙 By Mohamed Saad</a
-            >
-
-            <p class="body-3 flex items-center gap-12">
-              Powered By
-              <a
-                href="https://www.weatherapi.com/"
-                title="Free OpenWeather Api"
-                target="_blank"
-                rel="noopener"
-                class="flex items-center"
-                ><img
-                  src="./images/weatherapi_logo.webp"
-                  loading="lazy"
-                  alt="OpenWeather"
-              /></a>
-            </p>
-          </footer>
-        </div>
-        <div
-          class="lds-ring position-absolute items-center justify-center"
-          id="spinner"
-        >
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </article>
-    </main>
-  </body>
+<!doctype html>
+<html lang=en>
+<head>
+<title>WetherIo</title>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href=./images/favicon.svg type=image/x-icon>
+<link rel=stylesheet href=./css/all.min.css>
+<link rel=stylesheet href=./css/index.css>
+<link rel=stylesheet href=./css/media.css>
+<script type=module src=./js/app.js></script>
+</head>
+<body>
+<header class=position-relative>
+<div class="container flex items-center justify-between">
+<div class=logo>
+<img src=./images/logo.png alt=Logo>
+</div>
+<div class="search box flex items-center position-relative" id=searchParent>
+<input type=search name="Search Location" placeholder="Search City..." autocomplete=off id=searchLocation class="border-0 outline-0 color-white">
+<button class=icon-search id=iconSearch>
+<i class="fa-solid fa-search color-white"></i>
+</button>
+<button class="icon-back color-white" id=iconClose>
+<i class="fa-solid fa-arrow-left-long"></i>
+</button>
+<ul class="list position-absolute" id=list></ul>
+</div>
+<div class=current-location>
+<button class="flex items-center" id=currentLocation>
+<i class="fa-solid fa-crosshairs"></i>
+<span>Current Location</span>
+</button>
+</div>
+</div>
+</header>
+<main class=hidden>
+<article class=container>
+<div class="content-left position-sticky">
+<section class=current-website id=currentWebsite></section>
+<section class=forecast id=forecastSection></section>
+</div>
+<div class=content-right>
+<section class=highlights id=highlights></section>
+<section class=hourly-forecast id=hourlyForecast></section>
+<footer class="footer color-white flex items-center justify-center gap-20 flex-wrap">
+<a href=https://www.linkedin.com/in/mohamed-saad-025268304/ class=body-3 target=_blank>This Page Made 💙 By Mohamed Saad</a>
+<p class="body-3 flex items-center gap-12">
+Powered By
+<a href=https://www.weatherapi.com/ title="Free OpenWeather Api" target=_blank rel=noopener class="flex items-center"><img src=./images/weatherapi_logo.webp loading=lazy alt=OpenWeather></a>
+</p>
+</footer>
+</div>
+<div class="lds-ring position-absolute items-center justify-center" id=spinner>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</article>
+</main>
+</body>
 </html>
